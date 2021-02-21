@@ -1,0 +1,109 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <!-- import CSS -->
+  <link rel="stylesheet" 
+  href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+</head>
+<style>
+  .suggestion{
+    position: absolute;
+    width: 500px;
+    background-color: bisque;
+    height: 500px;
+  }
+  .isshow{
+    display: none;
+  }
+  .searchimg{
+    width:50px;
+    height:70px;
+  }
+  li{
+    padding:10px;
+    border-bottom: 1px solid #cccccc;
+    background-color: antiquewhite;
+  }
+  .searchimg img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .searchitem{
+    padding:10px;
+    font-size: 13px;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+
+  }
+</style>
+<body>
+  <div id="app">
+    <el-input
+    v-model="state2"
+    placeholder="请输入内容"
+    @input="handleinput"
+    style="width:500px"
+  ></el-input>
+ <div :class="[suggestion, {isshow:show}]">
+ <ul style="list-style: none;">
+   <li>
+     <a style="display: flex;" href="#">
+      <div class="searchimg"><img src='https://img9.doubanio.com/view/photo/l/public/p2563780504.webp'></div>
+      <div class="searchitem">
+        <span>2019</span> 
+        <span>动画/剧情</span>
+        <span>导演:饺子</span>
+      </div>
+     </a>
+     <div v-for='i in getarr()'>
+       <p>iiii</p>
+     </div>
+
+     <span></span>
+
+   </li>
+ </ul>
+ </div>
+  </div>
+</body>
+
+  <script src="https://unpkg.com/vue/dist/vue.js"></script>
+  <!-- import JavaScript -->
+  <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+
+  <script>
+    new Vue({
+      el: '#app',
+      data() {
+    return {
+      state2: '',
+      show:false,
+      suggestion:'suggestion',
+    };
+  },
+  methods: {
+    getarr(){
+    let a = [1,2,3];
+    return a;
+    },
+   handleinput() {
+    console.log(this. state2);
+    const url = 'http://localhost/home/search/'+`${this.state2}`
+    fetch(url).then(response=>{
+      response.json();
+    }).then(commit=>{
+   console.log(commit)
+    })
+
+    }
+  }
+})
+ 
+  </script>
+</html>
+

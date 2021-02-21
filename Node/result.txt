@@ -1,0 +1,106 @@
+G:\item-school\Movie-node\Node
+├─app.js
+├─package-lock.json
+├─package.json
+├─setting.js
+├─test.md
+├─test.txt
+├─verify.js
+├─views
+├─route
+|   ├─admin.js
+|   ├─article.js
+|   ├─home.js
+|   ├─movie.js
+|   ├─movie
+|   |   ├─comment.js
+|   |   ├─detail.js
+|   |   ├─find.js
+|   |   ├─getcomment.js
+|   |   ├─likecomment.js
+|   |   ├─personalstar.js
+|   |   ├─ranking.js
+|   |   ├─rating.js
+|   |   └recommend.js
+|   ├─home
+|   |  ├─hotmovie.js
+|   |  ├─likemovie.js
+|   |  ├─movie.json
+|   |  ├─movieallinfo.js
+|   |  ├─newmovie.js
+|   |  └search.js
+|   ├─article
+|   |    ├─addActicle.js
+|   |    ├─answer.js
+|   |    ├─center.js
+|   |    ├─comment.js
+|   |    ├─film.js
+|   |    ├─getArticel.js
+|   |    ├─image.js
+|   |    ├─like.js
+|   |    ├─likeArticle.js
+|   |    ├─moviearticle.js
+|   |    ├─ranking.js
+|   |    ├─remove.js
+|   |    ├─replay.js
+|   |    ├─updateArticle.js
+|   |    └view.js
+|   ├─admin
+|   |   ├─info.js
+|   |   ├─judge.js
+|   |   ├─login.js
+|   |   ├─updatemovie.js
+|   |   ├─useradd.js
+|   |   ├─userimg.js
+|   |   ├─username.js
+|   |   ├─userPage.js
+|   |   └watchmovie.js
+├─public
+|   ├─movie
+|   |   ├─p2563780504.webp
+|   |   ├─p2610002857.webp
+|   |   ├─p2621219978.webp
+|   |   ├─p2622388983.webp
+|   |   ├─p2626308994.webp
+|   |   ├─p2626707853.webp
+|   |   ├─p2626959989.webp
+|   |   ├─p2627038995.webp
+|   |   ├─p2627847859.webp
+|   |   ├─p2628491294.webp
+|   |   ├─p2628613028.webp
+|   |   └p2629056068.webp
+|   ├─home
+|   |  └22.jpg
+|   ├─big_poster
+|   |     ├─image_h.jpg
+|   |     ├─image_h1.jpg
+|   |     ├─image_n.jpg
+|   |     ├─image_n1.jpg
+|   |     ├─_image11.m12.jpg
+|   |     └_image234.jpg
+|   ├─article
+|   |    ├─upload_011fa1a56aeb5e2b0ec6a1e9cd893e67.webp
+|   |    ├─upload_59968e9f31bffbf5f1efa87d14e9785b.png
+|   |    ├─upload_5a9c557a501979ccbb108b3cd5041f40.jpg
+|   |    ├─upload_9a7d4f28cfe1cdfe74c4f6c15ecf74f9.jpg
+|   |    ├─upload_a0c1fb71d449e8b565b017bc3a487010.jpg
+|   |    ├─upload_df76093c12786d74596e479cefe15c3f.jpg
+|   |    └upload_e70ae5d8ac92a62c384ebcede843dc45.jpg
+|   ├─admin
+|   |   ├─default.jpg
+|   |   ├─upload_579dace514aceac2706ca672f92e3a9f.png
+|   |   ├─upload_b755d7ef463b92d071849e74b511ee6b.png
+|   |   ├─upload_bee6b5c4ffc356c58997042c9f438da0.png
+|   |   ├─upload_d3134a9018b21d37829c2ed170180677.png
+|   |   └upload_e8cee82ecbaa205d6bd29aadba8e784b.png
+├─model
+|   ├─article.js
+|   ├─comment.js
+|   ├─connect.js
+|   ├─dada.js
+|   ├─movie.js
+|   ├─rating.js
+|   ├─user.js
+|   └userinfo.js
+├─middleware
+|     └loginGuard.js
